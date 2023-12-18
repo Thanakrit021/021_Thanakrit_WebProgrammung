@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form Elements</h1>
+    <form action="https://example.com/" method="post">
+        <label for="username">Username : </label>
+        <input type="text" name="username" value="" placeholder="Please input username" size="" maxlength="30"/>
+    
+        ><br>
+        <br>
+        
+        <label for="username">Passwoed : </label>
+        <input type="password" name="password" value=""  size="" maxlength="30"/>
+        
+        <br>
+        <br>
+
+
+        <label for="email">Email : </label>
+        <input type="email" name="email" value="" placeholder="" size="30" maxlength="50"/>
+
+        <br>
+        <br>
+        <label for="address">Address : </label>
+        <textarea name="address"  cols="30" rows="10">บ้านเลขที่ 174 หมู่ 7 ตำบล เขาวิเศษ อำเภอ วังวิเศษ จังหวัด ตรัง</textarea>
+
+        <br>
+        <br>
+        <label for="gender">Gender : </label>
+        <input type="radio" name="gender" value="1"> Male
+        <input type="radio" name="gender" value="2"> Female
+        <input type="radio" name="gender" value="3"> LGBT+
+
+        <br>
+        <br>
+        <label for="source">Source : </label>
+        <input type="checkbox" name="friend"> Friend
+        <input type="checkbox" name="internet"> Internet
+        <input type="checkbox" name="radio"> Radio
+
+        <br>
+        <br>
+        <label for="department">Department : </label>
+        <select name="dept" >
+            <option value="1">IT</option>
+            <option value="2">Chemistry</option>
+            <option value="3">Engineer</option>
+            <option value="4">Environment</option>
+        </select>
+
+        <br>
+        <br>
+        <label for="profilepic">Upload File : </label>
+        <input type="file" name="profilepic">
+
+
+
+
+        <br>
+        <br>
+
+
+        <input type="submit" value="ลงทะเบียน" >
+        <input type="reset" value="ยกเลิก">
+        <input type="date">
+
+    </form>
+    
+</body>
+</html>
