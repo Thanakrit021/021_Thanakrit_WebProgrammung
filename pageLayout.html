@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Layout</title>
+    <style>
+      .news1 {
+        position: relative;
+        width: 300px;
+        border: 1px solid black;
+        margin-bottom: 10px;
+        padding: 5px;
+        background-color: lightpink;
+      }
+      .news2 {
+        position: relative;
+        width: 300px;
+        border: 1px solid black;
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: lightpink;
+        left: 200px;
+      }
+
+      .readmore {
+        position: absolute;
+        right: 2px;
+        top: 3px;
+        width: 100px;
+        padding: 10px;
+        background-color: antiquewhite;
+      }
+      .footer {
+        width: 500px;
+        margin: 0 auto;
+      }
+      .promotion {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: 350px;
+        font-size: 68px;
+        color: black;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="promotion">Promotion!</div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus placeat,
+      nihil asperiores voluptate repellat, dicta quos et qui saepe illo
+      exercitationem quaerat vitae natus. Dolore sunt alias qui quasi
+      praesentium.
+    </p>
+    <div class="news1">
+      <h1>News1</h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eaque maxime
+      nemo natus nostrum nisi blanditiis quis ratione voluptatum officia at ex
+      ad, nesciunt consectetur necessitatibus molestiae odit in quasi.
+
+      <div class="readmore">Readmore</div>
+    </div>
+
+    <div class="news2">
+      <h1>News2</h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+      molestiae dignissimos rerum nostrum ipsam optio, doloremque eligendi,
+      ratione amet non suscipit explicabo blanditiis sed hic sint debitis, aut
+      illo. Explicabo.
+    </div>
+
+    <div class="footer">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam architecto,
+      blanditiis in consectetur, voluptatibus nam quae itaque tenetur laudantium
+      sed voluptates, nostrum velit nemo unde debitis. Quia quo quis
+      exercitationem?
+    </div>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Noto+Sans+Thai&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+.content{
+    color: darkblue;
+}
+
+body{
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.navbar-brand{
+    color: gray;
+}
+.bg-body-tertiary {
+    background-color: white !important
+}
+.mybtn{
+    background-color: blue;
+    color: aliceblue;
+}
+.portfolio{
+    background-color: rgb(157, 227, 255);
+}
+.bi-pc-display-horizontal,.bi-file-earmark-text-fill,.bi-cup-fill{
+    color: cornflowerblue;
+    font-size: 80px;
+}
+.topic{
+    font-weight: bold;
+}
+.bluetopic{
+    color: rgb(173, 199, 247);
+}
+.figure-container {
+    display: flex;
+    gap: 20px;
+}
+.footer{
+    background-color: rgb(238, 135, 212);
+    color: aliceblue;
+}
+.bi-house-fill{
+    color: white;
+    font-size: 80px;
+}
+.bi-instagram , .bi-twitter , .bi-facebook , .bi-globe{
+    color: white;
+    font-size: 20px;
+}
+.port{
+    color: aliceblue;
+    font-size: 60px;
+}
+.head1{
+    border-bottom: 2px solid rgb(15, 76, 117);
+    padding-bottom: 50px;
+}
