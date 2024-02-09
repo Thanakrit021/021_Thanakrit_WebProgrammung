@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handler</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector("form").onsubmit = function () {
+          let username = document.querySelector("#username").value;
+          let password = document.querySelector("#password").value;
+       
+          //   กรณีี username < 8 ไม่ให้ submit และ show error message
+          let checkusername = username.length >= 8;
+          let checkpassword = password.length >= 8;
+          
+          
+          if(!checkusername){
+            document.querySelector("#errorUsername").innerHTML = "ชื่อผู้ใช้ต้องมีอย่างน้อย 8 ตัวอักษร";
+          } else {
+            document.querySelector("#errorUsername").innerHTML = "";
+          }
+
+          if(!checkpassword){
+            document.querySelector("#errorPassword").innerHTML = "รหัสผ่านต้องมีอย่างน้อย 8 ตัวอักษร";
+          } else {
+            document.querySelector("#errorPassword").innerHTML = "";
+          }
+
+
+          if(checkusername && checkpassword){
+            return true; // สั่งให้ Form Submit
+          }else{
+            return false; // สั่งให้ Form ไม่ Submit
+          }
+        //   alert(name);
+        };
+
+        // document.querySelector("#clickme").onclick = function () {
+        //   document.querySelector("h1").innerHTML = "Good Bye";
+        // };
+      });
+
+      //   function goodbye() {
+      //     document.querySelector("h1").innerHTML = "Good Bye";
+      //   }
+    </script>
+    <style>
+      .error {
+        color: red;
+      }
+      .container{
+        border: lightblue double;
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: lightblue;
+        
+      }
+    </style>
+  </head>
+  <body>
+
+    
+    <!-- <button id="clickme">Click Me</button> -->
+
+    
+      <div class="container">
+        <h1>Login</h1>
+        <form action="">
+            <p class="username">Username :</p>
+            <input type="text" id="username" />
+            <p id="errorUsername" class="error"></p>
+            <p class="password">Password :</p>
+            <input type="password" id="password" />
+            <p id="errorPassword" class="error"></p>
+            <input type="submit" value="OK" id="oksubmit"/>
+          </form>
+        
+      </div>
+  </body>
+</html>

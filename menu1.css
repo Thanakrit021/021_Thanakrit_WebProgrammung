@@ -1,0 +1,61 @@
+.nav-link{
+    color: aliceblue;
+}
+.bg-body-tertiary2{
+    background-color: black;
+}
+.buttonlogin{
+    color: aliceblue;
+    border: 1px solid;
+}
+.bi-search{
+    color: aliceblue;
+}
+.bi-list{
+
+    color: aliceblue;
+}
+.head1{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.titletext1{
+    color: red;
+    padding-left: 10px;
+}
+.text1{
+    border-right: 1px solid lightgrey;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.text1-1{
+    border-right: 1px solid lightgrey;
+    padding-right: 10px;
+}.navbar-brand{
+    background-color: red;
+    height: auto;
+    color: white;
+    width: 40px ;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+  
+}
+@media (min-width: 1200px){
+  
+
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .bi-list{
+    display: none;
+  
+  }
+
+}
+@media (max-width: 768px){
+  .bi-list{
+    display: none;
+  
+  }
+
+}
