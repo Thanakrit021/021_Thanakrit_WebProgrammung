@@ -5,6 +5,7 @@
     font-family: sans-serif;
     text-decoration: none;
 }
+
 header{
     position: fixed;
     top: 0;
@@ -123,6 +124,34 @@ header nav .social-link a i:hover{
 #btnMenu{
     display: none;
 }
+
+.typewriter h1 {
+    color: white;
+    overflow: hidden;
+    border-right: .15em solid lightpink; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 4s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+
+  /* The typing effect /
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  / The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color:lightpink }
+  }
+
+  
+
+
 
 /* Resoponsive*/
 
