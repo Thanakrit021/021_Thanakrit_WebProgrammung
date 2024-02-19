@@ -125,33 +125,33 @@ header nav .social-link a i:hover{
     display: none;
 }
 
-.typewriter h1 {
-    color: white;
-    overflow: hidden;
-    border-right: .15em solid lightpink; 
-    white-space: nowrap; 
-    margin: 0 auto; 
-    letter-spacing: .15em; 
+.typewriter  {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid lightpink; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 4s steps(30, end),
+      typing 3.5s steps(30, end),
       blink-caret .5s step-end infinite;
   }
-
-  /* The typing effect /
+  
+  /* The typing effect */
   @keyframes typing {
     from { width: 0 }
     to { width: 100% }
   }
-
-  / The typewriter cursor effect */
+  
+  /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color:lightpink }
+    50% { border-color: lightpink }
   }
 
   
-
-
+  
 
 /* Resoponsive*/
 
